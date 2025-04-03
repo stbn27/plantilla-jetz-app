@@ -29,14 +29,15 @@
     <link rel="stylesheet" href="/assets/fonts/material.css">
 
     <!-- [Template CSS Files] -->
-    <link rel="stylesheet" href="/css/style.css" id="main-style-link">
-    <link rel="stylesheet" href="/css/style-preset.css">
+    <!-- <link rel="stylesheet" href="/css/style.css" id="main-style-link"> -->
+     <link rel="stylesheet" href="./css/styles_e26.css">
+    <link rel="stylesheet" href="./css/style-preset.css">
 
 </head>
 <!-- [Head] end -->
 
 <!-- [Body] Start -->
-<body>
+<body data-bs-theme="light">
 
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
@@ -58,10 +59,10 @@
                 <div class="card my-5">
                     <div class="card-body">
 
-                        <form>
+                        <form action="./admin/dashboard.html">
                             <div class="d-flex justify-content-between align-items-end mb-4">
                                 <h3 class="mb-0"><b>Iniciar sesión</b></h3>
-                                <a href="#" class="link-primary">Crear una cuenta</a>
+                                <a href="./register.html" class="link-primary">Crear una cuenta</a>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Correo electronico</label>
@@ -77,10 +78,10 @@
                                         checked="">
                                     <label class="form-check-label text-muted" for="customCheckc1">Mantener mi sesión iniciada</label>
                                 </div>
-                                <a href="/forgot-password.html" class="text-secondary fs-6 f-w-400">Olvide mi contraseña</a>
+                                <a href="./forgot-password.html" class="text-secondary fs-6 f-w-400">Olvide mi contraseña</a>
                             </div>
                             <div class="d-grid mt-4">
-                                <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                             </div>
                         </form>
 

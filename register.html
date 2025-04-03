@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="../assets/fonts/material.css">
 
     <!-- [Template CSS Files] -->
-    <link rel="stylesheet" href="/css/style.css" id="main-style-link">
+    <!-- <link rel="stylesheet" href="/css/style.css" id="main-style-link"> -->
+    <link rel="stylesheet" href="./css/styles_e26.css">
     <link rel="stylesheet" href="/css/style-preset.css">
 
 </head>
@@ -40,7 +41,7 @@
 
 <!-- [Body] Start -->
 
-<body>
+<body data-bs-theme="light">
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
         <div class="loader-track">
@@ -59,63 +60,66 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-end mb-4">
                             <h3 class="mb-0"><b>Crear una cuenta</b></h3>
-                            <a href="/login.html" class="link-primary">¿Ya tienes una cuenta?</a>
+                            <a href="./login.html" class="link-primary">¿Ya tienes una cuenta?</a>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group mb-3">
-                                    <label class="form-label">Nombre(s)*</label>
-                                    <input type="text" class="form-control" placeholder="nombre">
+                        <form action="./login.html">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label">Nombre(s)*</label>
+                                        <input type="text" class="form-control" placeholder="nombre">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label">Apellidos*</label>
+                                        <input type="text" class="form-control" placeholder="apellidos">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group mb-3">
-                                    <label class="form-label">Apellidos*</label>
-                                    <input type="text" class="form-control" placeholder="apellidos">
+                            <div class="form-group mb-3">
+                                <label class="form-label">Calle*</label>
+                                <input type="text" class="form-control" placeholder="calle">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label">Ciudad</label>
+                                        <input type="text" class="form-control" placeholder="ciudad">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label">Código postal</label>
+                                        <input type="text" class="form-control" placeholder="######">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label class="form-label">Calle*</label>
-                            <input type="text" class="form-control" placeholder="calle">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group mb-3">
-                                    <label class="form-label">Ciudad</label>
-                                    <input type="text" class="form-control" placeholder="ciudad">
-                                </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">Descripción del domicilio*</label>
+                                <input type="text" class="form-control" placeholder="Color de puerta, fachada, etc.">
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group mb-3">
-                                    <label class="form-label">Código postal</label>
-                                    <input type="text" class="form-control" placeholder="######">
-                                </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">Nombre del taller</label>
+                                <input type="text" class="form-control" placeholder="Nombre del taller">
                             </div>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label class="form-label">Descripción del domicilio*</label>
-                            <input type="text" class="form-control" placeholder="Color de puerta, fachada, etc.">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label class="form-label">Nombre del taller</label>
-                            <input type="text" class="form-control" placeholder="Nombre del taller">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label class="form-label">Correo*</label>
-                            <input type="email" class="form-control" placeholder="usuario@company.com">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" placeholder="********">
-                        </div>
-                        <p class="mt-4 text-sm text-muted">Al registrarte, aceptas nuestros <a href="#"
-                                class="text-primary"> Términos de servicio </a> y nuestra <a href="#"
-                                class="text-primary">
-                                Política de privacidad</a></p>
-                        <div class="d-grid mt-3">
-                            <button type="button" class="btn btn-primary">Crear cuenta</button>
-                        </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">Correo*</label>
+                                <input type="email" class="form-control" placeholder="usuario@company.com">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" placeholder="********">
+                            </div>
+                            <p class="mt-4 text-sm text-muted">Al registrarte, aceptas nuestros <a href="#"
+                                    class="text-primary"> Términos de servicio </a> y nuestra <a href="#"
+                                    class="text-primary">
+                                    Política de privacidad</a></p>
+                            <div class="d-grid mt-3">
+                                <button type="submit" class="btn btn-primary">Crear cuenta</button>
+                            </div>
+                        </form>
+
                         <div class="saprator mt-3">
                             <span>Registrase con</span>
                         </div>
@@ -138,7 +142,7 @@
                             </div>
                             <div class="col-4">
                                 <div class="d-grid">
-                                    <button type="button" class="btn mt-2 btn-light-primary bg-light text-muted">
+                                    <button type="submit" class="btn mt-2 btn-light-primary bg-light text-muted">
                                         <img src="../assets/authentication/facebook.svg" alt="img"> <span
                                             class="d-none d-sm-inline-block"> Facebook</span>
                                     </button>
