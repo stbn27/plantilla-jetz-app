@@ -12,11 +12,8 @@ File: style.css
     --bs-body-bg: #ffffff;
     --bs-body-bg-rgb: 255, 255, 255;
     --pc-heading-color: #343a40;
-
     --pc-sidebar-color-rgb: 20, 20, 20;
-    
     --pc-sidebar-shadow: 1px 0 0 0px rgb(240, 240, 240);
-    
     --pc-header-shadow: 0 1px 0 0px rgb(240 240 240);
     --pc-card-box-shadow: none;
     --pc-header-submenu-background: #ffffff;
@@ -369,7 +366,7 @@ h2,
     --bs-body-color: #dee2e6;
     --bs-body-color-rgb: 222, 226, 230;
     --bs-body-bg: #212529;
-    --pc-header-background: #000000;
+    --pc-header-background: #202428;
     --pc-header-color: #ffffff;
     --pc-heading-color: #91b9e0;
     --bs-body-bg-rgb: 33, 37, 41;
@@ -22334,12 +22331,12 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
 }
 .auth-main .auth-wrapper.v3 .auth-form {
   flex-direction: column;
-  background: url("/assets/icono.png");
+  background: url("../assets/logo.svg");
   min-height: 100vh;
   padding: 24px;
   background-repeat: no-repeat;
-  background-size: auto 75%;
-  background-position: left center;
+  background-size: auto 95%;
+  background-position: center;
   position: relative;
   justify-content: space-between;
 }
