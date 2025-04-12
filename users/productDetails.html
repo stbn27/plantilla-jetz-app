@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- [Head] start -->
+
+<head>
+  <title>Products Details | Mantis Bootstrap 5 Admin Template</title>
+
+  <!-- [Meta] -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Proyecto de la uea de BD usando PHP. Equipo 7">
+  <meta name="keywords" content="Base Master, CRM, CMS, JETS, mecanico, auto, autoparte, aceite">
+  <meta name="author" content="Esteban José Julian && EQ7">
+
+  <!-- [Favicon] icon -->
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+
+  <!-- [Google Font] Family -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
+    id="main-font-link">
+
+  <!-- [Tabler Icons] https://tablericons.com -->
+  <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css">
+  <!-- [Feather Icons] https://feathericons.com -->
+  <link rel="stylesheet" href="../assets/fonts/feather.css">
+  <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+  <link rel="stylesheet" href="../assets/fonts/fontawesome.css">
+  <!-- [Material Icons] https://fonts.google.com/icons -->
+  <link rel="stylesheet" href="../assets/fonts/material.css">
+
+  <!-- [Template CSS Files] -->
+  <link rel="stylesheet" href="../css/personalizado.css">
+  <link rel="stylesheet" href="../css/style-preset.css">
+  <link rel="stylesheet" href="../css/styles_e26.css">
+
+</head>
+<!-- [Head] end -->
+
+<!-- [Body] Start -->
+<body data-bs-theme="dark">
+
+  <!-- [ Pre-loader ] start -->
+  <div class="loader-bg">
+    <div class="loader-track">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+  <!-- [ Pre-loader ] End -->
+
+  <!-- [ Sidebar Menu ] start -->
+  <nav class="pc-sidebar">
+    <div class="navbar-wrapper">
+
+      <div class="m-header">
+        <a href="../dashboard/index.html" class="b-brand text-primary">
+          <!-- ========   Change your logo from here   ============ -->
+          <img src="../assets/logo_120.svg" class="img-fluid logo-lg" alt="logo">
+        </a>
+      </div>
+
+      <div class="navbar-content">
+        <ul class="pc-navbar">
+          <li class="pc-item">
+            <a href="/admin/dashboard.html" class="pc-link">
+              <span class="pc-micon"><i class="ti ti-dashboard"></i></span>
+              <span class="pc-mtext">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="pc-item pc-caption">
+            <label>Solicitudes</label>
+            <i class="ti ti-dashboard"></i>
+          </li>
+          <li class="pc-item">
+            <a href="#" class="pc-link">
+              <span class="pc-micon"><i class="ti ti-typography"></i></span>
+              <span class="pc-mtext">Pedidos</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="#" class="pc-link">
+              <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
+              <span class="pc-mtext">Chats pendientes</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="#" class="pc-link">
+              <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
+              <span class="pc-mtext">Talleres</span>
+            </a>
+          </li>
+
+          <li class="pc-item pc-caption">
+            <label>Inventario</label>
+            <i class="ti ti-news"></i>
+          </li>
+          <li class="pc-item">
+            <a href="#" class="pc-link">
+              <span class="pc-micon"><i class="ti ti-lock"></i></span>
+              <span class="pc-mtext">Primarios</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="#" class="pc-link">
+              <span class="pc-micon"><i class="ti ti-user-plus"></i></span>
+              <span class="pc-mtext">Secundarios</span>
+            </a>
+          </li>
+
+          <li class="pc-item pc-caption">
+            <label>Otros</label>
+            <i class="ti ti-brand-chrome"></i>
+          </li>
+          <li class="pc-item pc-hasmenu">
+            <a href="#!" class="pc-link"><span class="pc-micon">
+                <i class="ti ti-menu"></i>
+              </span><span class="pc-mtext">Usuarios</span>
+              <span class="pc-arrow">
+                <i data-feather="chevron-right"></i>
+              </span>
+            </a>
+            <ul class="pc-submenu">
+              <li class="pc-item"><a class="pc-link" href="../users/product.html">Productos</a></li>
+              <li class="pc-item pc-hasmenu">
+                <a href="#!" class="pc-link">Level 2.2<span class="pc-arrow"><i
+                      data-feather="chevron-right"></i></span></a>
+                <ul class="pc-submenu">
+                  <li class="pc-item"><a class="pc-link" href="#!">Level 3.1</a></li>
+                  <li class="pc-item"><a class="pc-link" href="#!">Level 3.2</a></li>
+                  <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i
+                          data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                      <li class="pc-item"><a class="pc-link" href="#!">Level 4.1</a></li>
+                      <li class="pc-item"><a class="pc-link" href="#!">Level 4.2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="pc-item pc-hasmenu">
+                <a href="#!" class="pc-link">Level 2.3<span class="pc-arrow"><i
+                      data-feather="chevron-right"></i></span></a>
+                <ul class="pc-submenu">
+                  <li class="pc-item"><a class="pc-link" href="#!">Level 3.1</a></li>
+                  <li class="pc-item"><a class="pc-link" href="#!">Level 3.2</a></li>
+                  <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i
+                          data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                      <li class="pc-item"><a class="pc-link" href="#!">Level 4.1</a></li>
+                      <li class="pc-item"><a class="pc-link" href="#!">Level 4.2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="pc-item">
+            <a href="../login.html" class="pc-link">
+              <span class="pc-micon"><i class="ti ti-brand-chrome"></i></span>
+              <span class="pc-mtext">Cerrar sesión</span>
+            </a>
+          </li>
+        </ul>
+        <div class="card text-center">
+          <div class="card-body">
+            <img src="../img/autoparte1.webp" alt="images" class="img-fluid mb-2">
+            <p>Generar recordatorio</p>
+            <button class="btn btn-success">Anotar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- [ Sidebar Menu ] end -->
+
+  <!-- [ Header Topbar ] start -->
+  <header class="pc-header">
+    <div class="header-wrapper">
+
+      <!-- [Mobile Media Block] start -->
+      <div class="me-auto pc-mob-drp">
+
+        <ul class="list-unstyled">
+
+          <!-- ======= Menu collapse Icon ===== -->
+          <li class="pc-h-item pc-sidebar-collapse">
+            <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+              <i class="ti ti-menu-2"></i>
+            </a>
+          </li>
+          <li class="pc-h-item pc-sidebar-popup">
+            <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+              <i class="ti ti-menu-2"></i>
+            </a>
+          </li>
+          <li class="dropdown pc-h-item d-inline-flex d-md-none">
+            <a class="pc-head-link dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" aria-expanded="false">
+              <i class="ti ti-search"></i>
+            </a>
+            <div class="dropdown-menu pc-h-dropdown drp-search">
+              <form class="px-3">
+                <div class="form-group mb-0 d-flex align-items-center">
+                  <i data-feather="search"></i>
+                  <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="pc-h-item d-none d-md-inline-flex">
+            <form class="header-search">
+              <i data-feather="search" class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Buscar aquí. . .">
+            </form>
+          </li>
+        </ul>
+      </div>
+
+      <!-- [Mobile Media Block end] -->
+      <div class="ms-auto">
+        <ul class="list-unstyled">
+          <li class="dropdown pc-h-item pc-mega-menu">
+
+            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" aria-expanded="false">
+              <i class="ti ti-layout-grid"></i>
+            </a>
+
+            <div class="dropdown-menu pc-h-dropdown pc-mega-dmenu">
+              <div class="row g-0">
+
+                <div class="col image-block">
+                  <h2 class="text-white">Ofertas activas</h2>
+                  <p class="text-white my-4">Revisar las ofertas y promociones activas y recuerda nuestra filosofía es
+                    entrega en 90 minutos...</p>
+                  <div class="row align-items-end">
+                    <div class="col-auto">
+                      <div class="btn btn btn-light">Ver listado <i class="ti ti-arrow-narrow-right"></i></div>
+                    </div>
+                    <div class="col">
+                      <img src="../img/ofertas.png" alt="image" class="img-fluid img-charts">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <h6 class="mega-title">Inventario</h6>
+                  <ul class="pc-mega-list">
+                    <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Exeso</a></li>
+                    <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Por agotarse</a></li>
+                    <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Agotados</a></li>
+                    <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Badges</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h6 class="mega-title">Socios</h6>
+                  <ul class="pc-mega-list">
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Tiendas aliadas</a></li>
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Talleres aliados</a></li>
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Nuestras tiendas</a></li>
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Ver mapa</a></li>
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Otros</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h6 class="mega-title">Otros</h6>
+                  <ul class="pc-mega-list">
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Ayuda boot</a></li>
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Generar reporte</a></li>
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Agregar stock</a></li>
+                    <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Ver mi cuenta</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="dropdown pc-h-item">
+            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" aria-expanded="false">
+              <i class="ti ti-language"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+              <a href="#" class="dropdown-item">
+                <img class="icono" src="../img/languajes/espannol.ico" alt="">
+                <span>Español</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <img class="icono" src="../img/languajes/ingles.ico" alt="">
+                <span>Ingles</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="ti ti-headset"></i>
+                <span>Nahult</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="dropdown pc-h-item">
+            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" aria-expanded="false">
+              <i class="ti ti-bell"></i>
+              <span class="badge bg-success pc-h-badge">31</span>
+            </a>
+            <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
+              <div class="dropdown-header d-flex align-items-center justify-content-between">
+                <h5 class="m-0">Mensajes</h5>
+                <a href="#!" class="pc-head-link bg-transparent"><i class="ti ti-x text-danger"></i></a>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-header px-0 text-wrap header-notification-scroll position-relative"
+                style="max-height: calc(100vh - 215px)">
+                <div class="list-group list-group-flush w-100">
+                  <a class="list-group-item list-group-item-action">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img src="../img/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+                      </div>
+                      <div class="flex-grow-1 ms-1">
+                        <span class="float-end text-muted">4:00 AM</span>
+                        <p class="text-body mb-1"><b>Mario Alberto</b> solicita 12 neumaticos.
+                        </p>
+                        <span class="text-muted">Hace 2 min</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="list-group-item list-group-item-action">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img src="../img/user/avatar-1.jpg" alt="user-image" class="user-avtar">
+                      </div>
+                      <div class="flex-grow-1 ms-1">
+                        <span class="float-end text-muted">6:00 PM</span>
+                        <p class="text-body mb-1"><b>Fernando García</b> necesita una aclaración.</p>
+                        <span class="text-muted">Hace 1 día</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="list-group-item list-group-item-action">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img src="../img/user/avatar-3.jpg" alt="user-image" class="user-avtar">
+                      </div>
+                      <div class="flex-grow-1 ms-1">
+                        <span class="float-end text-muted">2:45 PM</span>
+                        <p class="text-body mb-1">Estoy por agotarse del <b>taller M45</b></p>
+                        <span class="text-muted">Hace 5 horas</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="list-group-item list-group-item-action">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img src="../img/user/avatar-4.jpg" alt="user-image" class="user-avtar">
+                      </div>
+                      <div class="flex-grow-1 ms-1">
+                        <span class="float-end text-muted">9:10 PM</span>
+                        <p class="text-body mb-1">Junta con el <b>Sr. Juan</b></p>
+                        <span class="text-muted">Inicia a las 8:20 AM</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="text-center py-2">
+                <a href="#!" class="link-primary">Ver todas</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Cambiar el tema -->
+          <!-- <li class="dropdown pc-h-item">
+                    <a class="pc-head-link me-0" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_pc_layout">
+                        <i class="ti ti-moon-stars"></i>
+                        <i class="ti ti-sun"></i>
+                    </a>
+                </li> -->
+
+          <li class="dropdown pc-h-item header-user-profile">
+            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+              <img src="../img/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+            </a>
+            <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+
+              <div class="dropdown-header">
+                <div class="d-flex mb-1">
+                  <div class="flex-shrink-0">
+                    <img src="../img/user/avatar-2.jpg" alt="user-image" class="user-avtar wid-35">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-1">Mario Pérez</h6>
+                    <span>Surtidor de tienda #234</span>
+                  </div>
+                  <a href="#!" class="pc-head-link bg-transparent">
+                    <i class="ti ti-power text-danger"></i>
+                  </a>
+                </div>
+              </div>
+
+              <ul class="nav drp-tabs nav-fill nav-tabs" id="mydrpTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="drp-t1" data-bs-toggle="tab" data-bs-target="#drp-tab-1"
+                    type="button" role="tab" aria-controls="drp-tab-1" aria-selected="true">
+                    <i class="ti ti-user"></i> Perfil</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="drp-t2" data-bs-toggle="tab" data-bs-target="#drp-tab-2" type="button"
+                    role="tab" aria-controls="drp-tab-2" aria-selected="false">
+                    <i class="ti ti-settings"></i> Configuración</button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="mysrpTabContent">
+                <div class="tab-pane fade show active" id="drp-tab-1" role="tabpanel" aria-labelledby="drp-t1"
+                  tabindex="0">
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-edit-circle"></i>
+                    <span>Editar perfil</span>
+                  </a>
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-user"></i>
+                    <span>Ver perfil</span>
+                  </a>
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-clipboard-list"></i>
+                    <span>Socios</span>
+                  </a>
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-wallet"></i>
+                    <span>Inventario</span>
+                  </a>
+                  <a href="../login.html" class="dropdown-item">
+                    <i class="ti ti-power"></i>
+                    <span>Cerrar sesión</span>
+                  </a>
+                </div>
+                <div class="tab-pane fade" id="drp-tab-2" role="tabpanel" aria-labelledby="drp-t2" tabindex="0">
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-help"></i>
+                    <span>Chatear</span>
+                  </a>
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-user"></i>
+                    <span>Ver pedidos</span>
+                  </a>
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-lock"></i>
+                    <span>Terminos y condiciones</span>
+                  </a>
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-messages"></i>
+                    <span>Preguntas frecuentes</span>
+                  </a>
+                  <a href="#!" class="dropdown-item">
+                    <i class="ti ti-list"></i>
+                    <span>Historial de movimientos</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- [ Header ] end -->
+
+
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+
+      <!-- [ breadcrumb ] start -->
+      <div class="page-header">
+        <div class="page-block">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item" aria-current="page">Products</li>
+              </ul>
+            </div>
+            <div class="col-md-12">
+              <div class="page-header-title">
+                <h2 class="mb-0">Detalles del producto</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [ breadcrumb ] end -->
+
+      <!-- [ Main Content ] start -->
+      <div class="row">
+        <!-- [ sample-page ] start -->
+        <div class="col-sm-12">
+
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+
+                <div class="col-md-12 col-lg-6">
+                  <div class="sticky-md-top product-sticky">
+                    <div id="carouselExampleCaptions" class="carousel slide ecomm-prod-slider" data-bs-ride="carousel">
+                      <div class="carousel-inner bg-light rounded">
+
+                        <div class="float-end p-3">                          
+                          <div class="form-check prod-likes">
+                            <input type="checkbox" class="form-check-input">
+                            <i data-feather="heart" class="prod-likes-icon"></i>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item active">
+                          <img src="../upload/products/img1.webp" class="d-block" alt="Product images">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../upload/products/img10.png" class="d-block" alt="Product images">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../upload/products/img11.webp" class="d-block" alt="Product images">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../upload/products/img1.webp" class="d-block" alt="Product images">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../upload/products/img1.webp" class="d-block" alt="Product images">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../upload/products/img1.webp" class="d-block" alt="Product images">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../upload/products/img1.webp" class="d-block" alt="Product images">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../upload/products/img1.webp" class="d-block" alt="Product images">
+                        </div>
+                      </div>
+
+                      <ol class="carousel-indicators position-relative product-carousel-indicators my-sm-3 mx-0">
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="w-25 h-auto active">
+                          <img src="../upload/products/img16.webp" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="w-25 h-auto">
+                          <img src="../upload/products/img15.png" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="w-25 h-auto">
+                          <img src="../upload/products/img13.webp" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="w-25 h-auto">
+                          <img src="../upload/products/img17.png" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="w-25 h-auto">
+                          <img src="../upload/products/img18.jpg" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="w-25 h-auto">
+                          <img src="../upload/products/img19.png" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" class="w-25 h-auto">
+                          <img src="../upload/products/img13.webp" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" class="w-25 h-auto">
+                          <img src="../upload/products/img10.png" class="d-block wid-50 rounded" alt="Product images">
+                        </li>
+                      </ol>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6">
+
+                  <div class="star f-18 mb-3">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <i class="far fa-star text-muted"></i>
+                    <span class="text-sm text-muted">(350+)</span>
+                  </div>
+
+                  <h3 class="my-3">Neumatico R34 Todo terreno 23x43 <span class="badge bg-light-primary rounded-pill f-14 px-2">New</span></h3>
+                  <span class="badge bg-light-success f-14">En stock</span>
+
+                  <p class="text-muted mt-3">Neumaticos todo terreno para tus aventuras mas locas!... Rodada 23 C54 34x44</p>
+
+                  <div class="form-group row">
+                    <label class="col-form-label col-lg-3 col-sm-12 text-lg-end">Medidas<span class="text-danger">*</span></label>
+                    <!-- En caso de aplicar color -->
+                    <!-- <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+
+                      <div class="form-check form-check-inline color-checkbox mb-0">
+                        <input class="form-check-input" type="radio" name="product_color" checked>
+                        <i class="fas fa-circle text-primary"></i>
+                      </div>
+
+                      <div class="form-check form-check-inline color-checkbox mb-0">
+                        <input class="form-check-input" type="radio" name="product_color">
+                        <i class="fas fa-circle text-secondary"></i>
+                      </div>
+
+                      <div class="form-check form-check-inline color-checkbox mb-0">
+                        <input class="form-check-input" type="radio" name="product_color">
+                        <i class="fas fa-circle text-danger"></i>
+                      </div>
+
+                      <div class="form-check form-check-inline color-checkbox mb-0">
+                        <input class="form-check-input" type="radio" name="product_color">
+                        <i class="fas fa-circle text-dark"></i>
+                      </div>
+
+                    </div> -->
+
+                    <!-- En caso de aplicar medidas -->
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                      <select class="form-select shadow-none">
+                        <option value="0">Seleccione una medida</option>
+                        <option value="1">23x43</option>
+                        <option value="2">23x44</option>
+                        <option value="3">23x45</option>
+                      </select>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-form-label col-lg-4 col-sm-12 text-lg-end">Cantidad<span class="text-danger">*</span></label>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="btn-group btn-group-sm mb-2 border" role="group">
+                        <button type="button" id="decrease" onclick="decreaseValue('number')" class="btn btn-link-dark"><i class="ti ti-minus"></i></button>
+                        <input class="wid-40 text-center border-0 m-0 form-control rounded-0 shadow-none" type="text" id="number" value="0">
+                        <button type="button" id="increase" onclick="increaseValue('number')" class="btn btn-link-dark"><i class="ti ti-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="mb-4">
+                    <b>$2075</b><span class="mx-2 f-16 text-muted f-w-400 text-decoration-line-through">$3500</span>
+                  </h2>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="d-grid">
+                        <button type="button" class="btn btn-primary">Comprar ahora</button>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-grid">
+                        <button type="button" class="btn btn-outline-secondary">Agregar al carrito</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-12">
+              <div class="card">
+
+                <div class="card-header pb-0">
+                  <ul class="nav nav-tabs profile-tabs mb-0" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="ecomtab-tab-1" data-bs-toggle="tab" href="#ecomtab-1" role="tab"
+                        aria-controls="ecomtab-1" aria-selected="true">Caracteristicas
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="ecomtab-tab-2" data-bs-toggle="tab" href="#ecomtab-2" role="tab"
+                        aria-controls="ecomtab-2" aria-selected="true">Especificaciones
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="ecomtab-tab-3" data-bs-toggle="tab" href="#ecomtab-3" role="tab"
+                        aria-controls="ecomtab-3" aria-selected="true">Compra
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="ecomtab-tab-4" data-bs-toggle="tab" href="#ecomtab-4" role="tab"
+                        aria-controls="ecomtab-4" aria-selected="true">Comentarios<span
+                          class="badge bg-light-secondary rounded-pill px-2 ms-2">275</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <div class="tab-content">
+
+                    <div class="tab-pane  show active" id="ecomtab-1" role="tabpanel" aria-labelledby="ecomtab-tab-1">
+                      <div class="table-responsive">
+
+                        <table class="table table-borderless">
+                          <tbody>
+                            <tr>
+                              <td class="text-muted text-sm py-1">Marca :</td>
+                              <td class="py-1">Paki Ms</td>
+                            </tr>
+                            <tr>
+                              <td class="text-muted text-sm py-1">Modelo :</td>
+                              <td class="py-1">R54 Sup</td>
+                            </tr>
+                            <tr>
+                              <td class="text-muted text-sm py-1">Categoría :</td>
+                              <td class="py-1">Neumaticos</td>
+                            </tr>
+                            <tr>
+                              <td class="text-muted text-sm py-1">Estilo :</td>
+                              <td class="py-1">Todo terreno | Doble proposito | Terraceria </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+
+                      <div class="table-responsive">
+                        <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          <strong class="text-body">“When an unknown printer took a galley of type and scrambled it
+                            to make a type specimen book.”</strong> It has survived not only five centuries, but
+                          also the leap into electronic typesetting, remaining essentially unchanged. It was
+                          popularized in the 1960s with the release of Lestrade sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing software like PageMaker
+                          including versions of Lorem Ipsum.
+                        </p>
+                        <p class="text-muted">It was popularized in the 1960s with the release of Learjet sheets
+                          containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                          PageMaker including versions of Lorem Ipsum.</p>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane" id="ecomtab-2" role="tabpanel" aria-labelledby="ecomtab-tab-2">
+                      <div class="row">
+
+                        <div class="col-md-6">
+                          <h5>Compatible con</h5>
+                          <hr class="my-3">
+                          <div class="table-responsive">
+                            <table class="table table-borderless">
+                              <tbody>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">Vehiculo:</td>
+                                  <td class="py-1">Todos</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">Modelos :</td>
+                                  <td class="py-1">- -</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">Motor :</td>
+                                  <td class="py-1">- -</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <h5>Tipo de material</h5>
+                          <hr class="my-3">
+                          <div class="table-responsive">
+                            <table class="table table-borderless">
+                              <tbody>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">Carcasa :</td>
+                                  <td class="py-1">Metal - Aluminio</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">Temperatura máxima :</td>
+                                  <td class="py-1">- - -</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">Número de serie :</td>
+                                  <td class="py-1">MYDT2HN/A</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="tab-pane" id="ecomtab-3" role="tabpanel" aria-labelledby="ecomtab-tab-3">
+                      <div class="row">
+
+                        <div class="col-md-6">
+                          <h5>Mayoreo</h5>
+                          <hr class="my-3">
+                          <div class="table-responsive">
+                            <table class="table table-borderless">
+                              <tbody>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">+ 10 piezas:</td>
+                                  <td class="py-1">- 3 %</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">+ 15 piezas :</td>
+                                  <td class="py-1">- 5 %</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted text-sm py-1">+ 25 piezas :</td>
+                                  <td class="py-1">- 12%</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <h5>Términos</h5>
+                          <hr class="my-3">
+                          <div class="table-responsive">
+                            <p class="text-muted">El precio mostrado en la publicación es el precio individual. Si usted anteriormente ha comprado con nosotros es posible que se le otorgue un descuento adicional.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="tab-pane" id="ecomtab-4" role="tabpanel" aria-labelledby="ecomtab-tab-4">
+                      
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+
+                            <div class="col-xl-5">
+                              <h2 class="mb-3"><b>4<small class="text-muted">/5</small></b></h2>
+                              <p class="mb-2 text-muted">Basado en 275 reseñas</p>
+                              <div class="star mb-3 f-20">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <i class="far fa-star text-muted"></i>
+                              </div>
+                            </div>
+
+                            <div class="col-xl-7">
+                              <div class="d-flex align-items-center">
+                                <div class="w-100">
+
+                                  <div class="row align-items-center my-2">
+                                    <div class="col">
+                                      <div class="progress" style="height: 4px">
+                                        <div class="progress-bar bg-success" style="width: 30%"></div> 
+                                      </div>
+                                    </div>
+                                    <div class="col-auto">
+                                      <p class="mb-0 text-muted">5 estrellas</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="row align-items-center my-2">
+                                    <div class="col">
+                                      <div class="progress" style="height: 4px">
+                                        <div class="progress-bar bg-success" style="width: 60%"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-auto">
+                                      <p class="mb-0 text-muted">4 estrellas</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="row align-items-center my-2">
+                                    <div class="col">
+                                      <div class="progress" style="height: 4px">
+                                        <div class="progress-bar bg-success" style="width: 75%"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-auto">
+                                      <p class="mb-0 text-muted">3 estrellas</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="row align-items-center my-2">
+                                    <div class="col">
+                                      <div class="progress" style="height: 4px">
+                                        <div class="progress-bar bg-success" style="width: 40%"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-auto">
+                                      <p class="mb-0 text-muted">2 estrellas</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="row align-items-center">
+                                    <div class="col">
+                                      <div class="progress" style="height: 4px">
+                                        <div class="progress-bar bg-success" style="width: 55%"></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-auto">
+                                      <p class="mb-0 text-muted">1 estrella</p>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="media align-items-start">
+                            <img class="img-radius img-fluid wid-40" src="../assets/images/user/avatar-1.jpg" alt="User image">
+                            <div class="media-body ms-3">
+                              <h6 class="mb-1">Andres Guzman</h6>
+                              <p class="text-muted text-sm mb-1">Hace 2 horas</p>
+                              <div class="star ">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <i class="far fa-star text-muted"></i>
+                              </div>
+                              <p class="mb-0 text-muted text-sm mt-1">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="media align-items-start">
+                            <img class="img-radius img-fluid wid-40" src="../assets/images/user/avatar-2.jpg" alt="User image">
+                            <div class="media-body ms-3">
+                              <h6 class="mb-1">Juan Mecanico</h6>
+                              <p class="text-muted text-sm mb-1">Hace 5 dias</p>
+                              <div class="star ">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <i class="far fa-star text-muted"></i>
+                                <i class="far fa-star text-muted"></i>
+                              </div>
+                              <p class="mb-0 text-muted text-sm mt-1">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="media align-items-start">
+                            <img class="img-radius img-fluid wid-40" src="../assets/images/user/avatar-3.jpg"
+                              alt="User image">
+                            <div class="media-body ms-3">
+                              <h6 class="mb-1">María Ramirez</h6>
+                              <p class="text-muted text-sm mb-1">04/07/2024</p>
+                              <div class="star ">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted"></i>
+                                <i class="far fa-star text-muted"></i>
+                              </div>
+                              <p class="mb-0 text-muted text-sm mt-1">Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-center mt-3">
+                        <button class="btn btn-link-primary">Ver más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 position-relative">
+              <div class="card rel-prod-card">
+
+                <div class="card-header">
+                  <h5>Productos relacionados</h5>
+                </div>
+
+                <div class="card-body rel-prod-list">
+
+                  <div class="media align-items-start mb-3">
+                    <img class="bg-light rounded img-fluid wid-60" src="../upload/products/img1.webp" alt="User image">
+                    <div class="media-body mx-2">
+                      <h5 class="mb-1">Neuumatico S45 54x43 SLR</h5>
+                      <p class="text-truncate text-muted text-sm mb-2">Neumaticos</p>
+                      <h5 class="mb-1"><b>$275</b><span class="mx-2 f-16 text-muted f-w-400 text-decoration-line-through">$350</span></h5>
+                      <div class="star f-12">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <i class="far fa-star text-muted"></i>
+                      </div>
+                    </div>
+                    <div class="form-check prod-likes">
+                      <i data-feather="heart" class="prod-likes-icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="media align-items-start mb-3">
+                    <img class="bg-light rounded img-fluid wid-60" src="../upload/products/img3.png" alt="User image">
+                    <div class="media-body mx-2">
+                      <h5 class="mb-1">Neuumatico S45 54x43 SLR</h5>
+                      <p class="text-truncate text-muted text-sm mb-2">Neumaticos</p>
+                      <h5 class="mb-1"><b>$2754.43</b><span
+                          class="mx-2 f-16 text-muted f-w-400 text-decoration-line-through">$3504.54</span></h5>
+                      <div class="star f-12">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <i class="far fa-star text-muted"></i>
+                      </div>
+                    </div>
+                    <div class="form-check prod-likes">
+                      <i data-feather="heart" class="prod-likes-icon"></i>
+                    </div>
+                  </div>
+
+                  <div class="media align-items-start mb-3">
+                    <img class="bg-light rounded img-fluid wid-60" src="../upload/products/img4.avif" alt="User image">
+                    <div class="media-body mx-2">
+                      <h5 class="mb-1">Neuumatico S45 54x43 SLR</h5>
+                      <p class="text-truncate text-muted text-sm mb-2">Neumaticos</p>
+                      <h5 class="mb-1"><b>$2475</b><span
+                          class="mx-2 f-16 text-muted f-w-400 text-decoration-line-through">$3450</span></h5>
+                      <div class="star f-12">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <i class="far fa-star text-muted"></i>
+                      </div>
+                    </div>
+                    <div class="form-check prod-likes">
+                      <i data-feather="heart" class="prod-likes-icon"></i>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-footer">
+                  <div class="d-grid">
+                    <button class="btn btn-outline-secondary">Ver todos los productos</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ sample-page ] end -->
+      </div>
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+
+  <!-- [ Main Content ] end -->
+  <footer class="pc-footer">
+    <div class="footer-wrapper container-fluid">
+        <div class="row">
+            <div class="col-sm my-1">
+                <p class="m-0">STBN &amp; BASE MASTER  ||
+                    <a href="#" target="_blank">EQUIPO 7</a> |
+                    <a href="#" target="_blank">UAM</a>.</p>
+            </div>
+            <div class="col-auto my-1">
+                <ul class="list-inline footer-link mb-0">
+                    <li class="list-inline-item"><a href="/admin/dashboard.html">Inicio</a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank">Terminos y condiciones</a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank">Ayuda</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  <!-- Required Js -->
+  <script src="../assets/js/plugins/popper.min.js"></script>
+  <script src="../assets/js/plugins/simplebar.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap.min.js"></script>
+  <script src="../assets/js/fonts/custom-font.js"></script>
+  <script src="../assets/js/pcoded.js"></script>
+  <script src="../assets/js/plugins/feather.min.js"></script>
+
+
+
+
+
+  <script>layout_change('light');</script>
+
+
+
+
+  <script>change_box_container('false');</script>
+
+
+
+  <script>layout_rtl_change('false');</script>
+
+
+  <script>preset_change("preset-1");</script>
+
+
+  <script>font_change("Public-Sans");</script>
+
+
+
+  <!-- [Page Specific JS] start -->
+  <script>
+    // scroll-block
+    var tc = document.querySelectorAll('.scroll-block');
+    for (var t = 0; t < tc.length; t++) {
+      new SimpleBar(tc[t]);
+    }
+    // quantity start
+    function increaseValue(temp) {
+      var value = parseInt(document.getElementById(temp).value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById(temp).value = value;
+    }
+
+    function decreaseValue(temp) {
+      var value = parseInt(document.getElementById(temp).value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? (value = 1) : '';
+      value--;
+      document.getElementById(temp).value = value;
+    }
+    // quantity end
+  </script>
+  <!-- [Page Specific JS] end -->
+  <div class="offcanvas pct-offcanvas offcanvas-end" tabindex="-1" id="offcanvas_pc_layout">
+    <div class="offcanvas-header bg-primary">
+      <h5 class="offcanvas-title text-white">Mantis Customizer</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="pct-body" style="height: calc(100% - 60px)">
+      <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a class="btn border-0 text-start w-100" data-bs-toggle="collapse" href="#pctcustcollapse1">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <div class="avtar avtar-xs bg-light-primary">
+                    <i class="ti ti-layout-sidebar f-18"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-1">Theme Layout</h6>
+                  <span>Choose your layout</span>
+                </div>
+                <i class="ti ti-chevron-down"></i>
+              </div>
+            </a>
+            <div class="collapse show" id="pctcustcollapse1">
+              <div class="pct-content">
+                <div class="pc-rtl">
+                  <p class="mb-1">Direction</p>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="layoutmodertl">
+                    <label class="form-check-label" for="layoutmodertl">RTL</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <a class="btn border-0 text-start w-100" data-bs-toggle="collapse" href="#pctcustcollapse2">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <div class="avtar avtar-xs bg-light-primary">
+                    <i class="ti ti-brush f-18"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-1">Theme Mode</h6>
+                  <span>Choose light or dark mode</span>
+                </div>
+                <i class="ti ti-chevron-down"></i>
+              </div>
+            </a>
+            <div class="collapse show" id="pctcustcollapse2">
+              <div class="pct-content">
+                <div class="theme-color themepreset-color theme-layout">
+                  <a href="#!" class="active" onclick="layout_change('light')" data-value="false"><span><img
+                        src="../assets/images/customization/default.svg" alt="img"></span><span>Light</span></a>
+                  <a href="#!" class="" onclick="layout_change('dark')" data-value="true"><span><img
+                        src="../assets/images/customization/dark.svg" alt="img"></span><span>Dark</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <a class="btn border-0 text-start w-100" data-bs-toggle="collapse" href="#pctcustcollapse3">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <div class="avtar avtar-xs bg-light-primary">
+                    <i class="ti ti-color-swatch f-18"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-1">Color Scheme</h6>
+                  <span>Choose your primary theme color</span>
+                </div>
+                <i class="ti ti-chevron-down"></i>
+              </div>
+            </a>
+            <div class="collapse show" id="pctcustcollapse3">
+              <div class="pct-content">
+                <div class="theme-color preset-color">
+                  <a href="#!" class="active" data-value="preset-1"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 1</span></a>
+                  <a href="#!" class="" data-value="preset-2"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 2</span></a>
+                  <a href="#!" class="" data-value="preset-3"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 3</span></a>
+                  <a href="#!" class="" data-value="preset-4"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 4</span></a>
+                  <a href="#!" class="" data-value="preset-5"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 5</span></a>
+                  <a href="#!" class="" data-value="preset-6"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 6</span></a>
+                  <a href="#!" class="" data-value="preset-7"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 7</span></a>
+                  <a href="#!" class="" data-value="preset-8"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 8</span></a>
+                  <a href="#!" class="" data-value="preset-9"><span><img
+                        src="../assets/images/customization/theme-color.svg" alt="img"></span><span>Theme 9</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item pc-boxcontainer">
+            <a class="btn border-0 text-start w-100" data-bs-toggle="collapse" href="#pctcustcollapse4">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <div class="avtar avtar-xs bg-light-primary">
+                    <i class="ti ti-border-inner f-18"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-1">Layout Width</h6>
+                  <span>Choose fluid or container layout</span>
+                </div>
+                <i class="ti ti-chevron-down"></i>
+              </div>
+            </a>
+            <div class="collapse show" id="pctcustcollapse4">
+              <div class="pct-content">
+                <div class="theme-color themepreset-color boxwidthpreset theme-container">
+                  <a href="#!" class="active" onclick="change_box_container('false')" data-value="false"><span><img
+                        src="../assets/images/customization/default.svg" alt="img"></span><span>Fluid</span></a>
+                  <a href="#!" class="" onclick="change_box_container('true')" data-value="true"><span><img
+                        src="../assets/images/customization/container.svg" alt="img"></span><span>Container</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <a class="btn border-0 text-start w-100" data-bs-toggle="collapse" href="#pctcustcollapse5">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <div class="avtar avtar-xs bg-light-primary">
+                    <i class="ti ti-typography f-18"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-1">Font Family</h6>
+                  <span>Choose your font family.</span>
+                </div>
+                <i class="ti ti-chevron-down"></i>
+              </div>
+            </a>
+            <div class="collapse show" id="pctcustcollapse5">
+              <div class="pct-content">
+                <div class="theme-color fontpreset-color">
+                  <a href="#!" class="active" onclick="font_change('Public-Sans')"
+                    data-value="Public-Sans"><span>Aa</span><span>Public Sans</span></a>
+                  <a href="#!" class="" onclick="font_change('Roboto')"
+                    data-value="Roboto"><span>Aa</span><span>Roboto</span></a>
+                  <a href="#!" class="" onclick="font_change('Poppins')"
+                    data-value="Poppins"><span>Aa</span><span>Poppins</span></a>
+                  <a href="#!" class="" onclick="font_change('Inter')"
+                    data-value="Inter"><span>Aa</span><span>Inter</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="collapse show">
+              <div class="pct-content">
+                <div class="d-grid">
+                  <button class="btn btn-light-danger" id="layoutreset">Reset Layout</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- [Body] end -->
+
+</html>
