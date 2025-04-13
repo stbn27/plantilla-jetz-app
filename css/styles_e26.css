@@ -7,7 +7,7 @@ Support: https://codedthemes.authordesk.app
 File: style.css
 =========================================================================
 =================================================================================== */
-/* @import url("../css/duotone/style.css"); */
+@import url("./duotone/style.css");
 :root {
     --bs-body-bg: #ffffff;
     --bs-body-bg-rgb: 255, 255, 255;
@@ -22008,9 +22008,9 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--bs-card-bg);
   padding: 7.5px 7.5px 3.75px;
-  border: 1px solid #ced4da;
+  border: 1px solid var(--bs-border-color);
   border-radius: 4px;
   font-size: 14px;
   min-height: 44px;
@@ -22086,7 +22086,7 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
   z-index: 1;
   position: absolute;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--bs-card-bg);
   border: 1px solid #ced4da;
   top: 100%;
   margin-top: -1px;
@@ -22197,7 +22197,7 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
 .choices__input {
   display: inline-block;
   vertical-align: baseline;
-  background-color: #ffffff;
+  background-color: var(--bs-card-bg);
   font-size: 14px;
   margin-bottom: 0px;
   border: 0;
