@@ -22,20 +22,26 @@
     href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
     id="main-font-link">
 
-  <!-- [Tabler Icons] https://tablericons.com -->
-  <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css">
-  <!-- [Feather Icons] https://feathericons.com -->
-  <link rel="stylesheet" href="../assets/fonts/feather.css">
-  <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
-  <link rel="stylesheet" href="../assets/fonts/fontawesome.css">
-  <!-- [Material Icons] https://fonts.google.com/icons -->
-  <link rel="stylesheet" href="../assets/fonts/material.css">
-
-  <!-- [Template CSS Files] -->
-  <link rel="stylesheet" href="../css/styles_e26.css" id="main-style-link">
-  <link rel="stylesheet" href="../css/style-preset.css">
-  <link rel="stylesheet" href="../css/personalizado.css">
-  <link rel="stylesheet" href="../css/ckEditorPrueba.css">
+    
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css">
+    <!-- [Feather Icons] https://feathericons.com -->
+    <link rel="stylesheet" href="../assets/fonts/feather.css">
+    <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome.css">
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="../assets/fonts/material.css">
+    
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="../css/styles_e26.css" id="main-style-link">
+    <link rel="stylesheet" href="../css/style-preset.css">
+    <link rel="stylesheet" href="../css/personalizado.css">
+    <link rel="stylesheet" href="../css/ckEditorPrueba.css">
+    
+    <!-- [Page specific CSS] start -->
+    <link href="../assets/css/plugins/animate.min.css" rel="stylesheet" type="text/css">
+    <!-- [Page specific CSS] end -->
+  <link rel="stylesheet" href="../assets/css/uikit.css">
 
 </head>
 <!-- [Head] end -->
@@ -230,7 +236,7 @@
                 </div>
 
 
-                <div class="row">
+                <div class="row d-none">
                   <!-- [ Classic-editor ] start -->
                   <div class="col-sm-12">
                     <div class="card">
@@ -264,8 +270,6 @@
                 </div>
                 <!-- [ Classic-editor ] end -->
 
-
-
                 <div class="col-md-12">
                   <div class="card">
                     <div class="card-header">
@@ -275,8 +279,8 @@
                 </div>
 
                 <div class="text-end btn-page mb-0 mt-4">
-                  <button class="btn btn-outline-secondary">Cancel</button>
-                  <button class="btn btn-primary">Add new Product</button>
+                  <button class="btn btn-light-danger bs-error-ico">Cancelar</button>
+                  <button class="btn btn-light-success bs-success-ico">Agregar producto</button>
                 </div>
 
               </form>
@@ -301,6 +305,42 @@
   <script src="../assets/js/plugins/feather.min.js"></script>
 
   <!-- [Page Specific JS] start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="../assets/js/plugins/clipboard.min.js"></script>
+  <script src="../assets/js/component.js"></script>
+
+  <!-- <script>
+    // pc-component
+    var elem = document.querySelectorAll('.component-list-card a');
+    for (var l = 0; l < elem.length; l++) {
+      var pageUrl = window.location.href.split(/[?#]/)[0];
+      if (elem[l].href == pageUrl && elem[l].getAttribute('href') != '') {
+        elem[l].classList.add('active');
+      }
+    }
+    document.querySelector('#compo-menu-search').addEventListener("keyup", function () {
+      var tval = document.querySelector('#compo-menu-search').value.toLowerCase();
+      var elem = document.querySelectorAll('.component-list-card a');
+      for (var l = 0; l < elem.length; l++) {
+        var aval = elem[l].innerHTML.toLowerCase();
+        var n = aval.indexOf(tval);
+        if (n !== -1) {
+          elem[l].style.display = "block";
+        } else {
+          elem[l].style.display = "none";
+        }
+      }
+    });
+  </script> -->
+  <!-- [Page Specific JS] start -->
+
+  <!-- Sweet Alert -->
+  <script src="../assets/js/plugins/sweetalert2.all.min.js"></script>
+  <script src="../assets/js/pages/ac-alert.js"></script>
+  <!-- [Page Specific JS] end -->
+
+
+
   <!-- tagify -->
   <script src="../assets/js/plugins/choices.min.js"></script>
 
@@ -326,6 +366,9 @@
     })();
   </script>
   <!-- [Page Specific JS] end -->
+
+
+  
 
 </body>
 <!-- [Body] end -->
