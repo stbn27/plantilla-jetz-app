@@ -2,3 +2,16 @@
     width: 24px;
     height: 24px;
 }
+
+
+.width-70p {
+    width: 70%;
+}
+
+.img-prod-cover {
+    width: 50%;
+    height: 50%;
+    max-height: 230px;
+    object-fit: cover;
+    overflow: hidden;
+}

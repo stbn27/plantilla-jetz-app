@@ -245,6 +245,11 @@ h2,
     --pc-sidebar-shadow: 1px 0 0 0px rgb(240, 240, 240);
     --pc-header-shadow: 0 1px 0 0px rgb(240 240 240);
     --pc-header-color: #000000;
+
+    --bs-offcanvas-bg: #ffffff;
+
+    
+
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
@@ -374,6 +379,9 @@ h2,
     --pc-heading-color: #33a3ff;
     --pc-sidebar-shadow: 1px 0 0 0px rgb(36, 32, 32);
     --pc-header-shadow: 0 1px 0 0px rgb(19, 17, 17);
+
+    --bs-offcanvas-bg: #323232;
+
     --bs-body-bg-rgb: 33, 37, 41;
     --bs-emphasis-color: #fff;
     --bs-emphasis-color-rgb: 255, 255, 255;
@@ -6514,7 +6522,7 @@ textarea.form-control-lg {
   --bs-offcanvas-padding-x: 1.25rem;
   --bs-offcanvas-padding-y: 1.25rem;
   --bs-offcanvas-color: ;
-  --bs-offcanvas-bg: #ffffff;
+  
   --bs-offcanvas-border-width: 1px;
   --bs-offcanvas-border-color: rgba(0, 0, 0, 0.2);
   --bs-offcanvas-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
