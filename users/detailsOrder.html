@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- [Head] start -->
+
+<head>
+    <title>Carrito | JETZ BOOT</title>
+
+    <!-- [Meta] -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Proyecto de la uea de BD usando PHP. Equipo 7">
+    <meta name="keywords" content="Base Master, CRM, CMS, JETS, mecanico, auto, autoparte, aceite">
+    <meta name="author" content="Esteban José Julian && EQ7">
+
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <!-- [Google Font] Family -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
+        id="main-font-link">
+
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css">
+    <!-- [Feather Icons] https://feathericons.com -->
+    <link rel="stylesheet" href="../assets/fonts/feather.css">
+    <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome.css">
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="../assets/fonts/material.css">
+
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="../css/personalizado.css">
+    <link rel="stylesheet" href="../css/style-preset.css">
+    <link rel="stylesheet" href="../css/styles_e26.css">
+
+</head>
+<!-- [Head] end -->
+
+
+
+
+<!-- [Body] Start -->
+
+<body data-bs-theme="dark">
+
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+
+    <!-- [ Sidebar Menu ] start -->
+    <nav class="pc-sidebar">
+        <div class="navbar-wrapper">
+
+            <div class="m-header">
+                <a href="../dashboard/index.html" class="b-brand text-primary">
+                    <img src="../assets/logo_120.svg" class="img-fluid logo-lg" alt="logo">
+                </a>
+            </div>
+
+            <div class="navbar-content">
+                <ul class="pc-navbar">
+                    <li class="pc-item">
+                        <a href="/admin/dashboard.html" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-dashboard"></i></span>
+                            <span class="pc-mtext">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="pc-item pc-caption">
+                        <label>Solicitudes</label>
+                        <i class="ti ti-dashboard"></i>
+                    </li>
+                    <li class="pc-item">
+                        <a href="#" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-typography"></i></span>
+                            <span class="pc-mtext">Pedidos</span>
+                        </a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="#" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
+                            <span class="pc-mtext">Chats pendientes</span>
+                        </a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="#" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
+                            <span class="pc-mtext">Talleres</span>
+                        </a>
+                    </li>
+
+                    <li class="pc-item pc-caption">
+                        <label>Inventario</label>
+                        <i class="ti ti-news"></i>
+                    </li>
+                    <li class="pc-item">
+                        <a href="#" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-lock"></i></span>
+                            <span class="pc-mtext">Primarios</span>
+                        </a>
+                    </li>
+                    <li class="pc-item">
+                        <a href="#" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-user-plus"></i></span>
+                            <span class="pc-mtext">Secundarios</span>
+                        </a>
+                    </li>
+
+                    <li class="pc-item pc-caption">
+                        <label>Otros</label>
+                        <i class="ti ti-brand-chrome"></i>
+                    </li>
+                    <li class="pc-item pc-hasmenu">
+                        <a href="#!" class="pc-link"><span class="pc-micon">
+                                <i class="ti ti-menu"></i>
+                            </span><span class="pc-mtext">Usuarios</span>
+                            <span class="pc-arrow">
+                                <i data-feather="chevron-right"></i>
+                            </span>
+                        </a>
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="../users/product.html">Productos</a></li>
+                            <li class="pc-item pc-hasmenu">
+                                <a href="#!" class="pc-link">Level 2.2<span class="pc-arrow"><i
+                                            data-feather="chevron-right"></i></span></a>
+                                <ul class="pc-submenu">
+                                    <li class="pc-item"><a class="pc-link" href="#!">Level 3.1</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="#!">Level 3.2</a></li>
+                                    <li class="pc-item pc-hasmenu">
+                                        <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i
+                                                    data-feather="chevron-right"></i></span></a>
+                                        <ul class="pc-submenu">
+                                            <li class="pc-item"><a class="pc-link" href="#!">Level 4.1</a></li>
+                                            <li class="pc-item"><a class="pc-link" href="#!">Level 4.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="pc-item pc-hasmenu">
+                                <a href="#!" class="pc-link">Level 2.3<span class="pc-arrow"><i
+                                            data-feather="chevron-right"></i></span></a>
+                                <ul class="pc-submenu">
+                                    <li class="pc-item"><a class="pc-link" href="#!">Level 3.1</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="#!">Level 3.2</a></li>
+                                    <li class="pc-item pc-hasmenu">
+                                        <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i
+                                                    data-feather="chevron-right"></i></span></a>
+                                        <ul class="pc-submenu">
+                                            <li class="pc-item"><a class="pc-link" href="#!">Level 4.1</a></li>
+                                            <li class="pc-item"><a class="pc-link" href="#!">Level 4.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="pc-item">
+                        <a href="../login.html" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-brand-chrome"></i></span>
+                            <span class="pc-mtext">Cerrar sesión</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="../img/autoparte1.webp" alt="images" class="img-fluid mb-2">
+                        <p>Generar recordatorio</p>
+                        <button class="btn btn-success">Anotar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- [ Sidebar Menu ] end -->
+
+
+    <!-- [ Header Topbar ] start -->
+    <header class="pc-header">
+        <div class="header-wrapper">
+
+            <!-- [Mobile Media Block] start -->
+            <div class="me-auto pc-mob-drp">
+
+                <ul class="list-unstyled">
+
+                    <!-- ======= Menu collapse Icon ===== -->
+                    <li class="pc-h-item pc-sidebar-collapse">
+                        <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="pc-h-item pc-sidebar-popup">
+                        <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown pc-h-item d-inline-flex d-md-none">
+                        <a class="pc-head-link dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="ti ti-search"></i>
+                        </a>
+                        <div class="dropdown-menu pc-h-dropdown drp-search">
+                            <form class="px-3">
+                                <div class="form-group mb-0 d-flex align-items-center">
+                                    <i data-feather="search"></i>
+                                    <input type="search" class="form-control border-0 shadow-none"
+                                        placeholder="Search here. . .">
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="pc-h-item d-none d-md-inline-flex">
+                        <form class="header-search">
+                            <i data-feather="search" class="icon-search"></i>
+                            <input type="search" class="form-control" placeholder="Buscar aquí. . .">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- [Mobile Media Block end] -->
+            <div class="ms-auto">
+                <ul class="list-unstyled">
+                    <li class="dropdown pc-h-item pc-mega-menu">
+
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="ti ti-layout-grid"></i>
+                        </a>
+
+                        <div class="dropdown-menu pc-h-dropdown pc-mega-dmenu">
+                            <div class="row g-0">
+
+                                <div class="col image-block">
+                                    <h2 class="text-white">Ofertas activas</h2>
+                                    <p class="text-white my-4">Revisar las ofertas y promociones activas y recuerda
+                                        nuestra filosofía es entrega en 90 minutos...</p>
+                                    <div class="row align-items-end">
+                                        <div class="col-auto">
+                                            <div class="btn btn btn-light">Ver listado <i
+                                                    class="ti ti-arrow-narrow-right"></i></div>
+                                        </div>
+                                        <div class="col">
+                                            <img src="../img/ofertas.png" alt="image" class="img-fluid img-charts">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <h6 class="mega-title">Inventario</h6>
+                                    <ul class="pc-mega-list">
+                                        <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Exeso</a></li>
+                                        <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Por
+                                                agotarse</a></li>
+                                        <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Agotados</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item"><i class="ti ti-circle"></i>Badges</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Socios</h6>
+                                    <ul class="pc-mega-list">
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Tiendas
+                                                aliadas</a></li>
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Talleres
+                                                aliados</a></li>
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Nuestras
+                                                tiendas</a></li>
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Ver mapa</a>
+                                        </li>
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Otros</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mega-title">Otros</h6>
+                                    <ul class="pc-mega-list">
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Ayuda
+                                                boot</a></li>
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Generar
+                                                reporte</a></li>
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Agregar
+                                                stock</a></li>
+                                        <li><a href="#!" class="dropdown-item"><i class="ti ti-circle"></i>Ver mi
+                                                cuenta</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown pc-h-item">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="ti ti-language"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
+                            <a href="#" class="dropdown-item">
+                                <img class="icono" src="../img/languajes/espannol.ico" alt="">
+                                <span>Español</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img class="icono" src="../img/languajes/ingles.ico" alt="">
+                                <span>Ingles</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="ti ti-headset"></i>
+                                <span>Nahult</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown pc-h-item">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="ti ti-bell"></i>
+                            <span class="badge bg-success pc-h-badge">31</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
+                            <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                <h5 class="m-0">Mensajes</h5>
+                                <a href="#!" class="pc-head-link bg-transparent"><i class="ti ti-x text-danger"></i></a>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-header px-0 text-wrap header-notification-scroll position-relative"
+                                style="max-height: calc(100vh - 215px)">
+                                <div class="list-group list-group-flush w-100">
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="../img/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">4:00 AM</span>
+                                                <p class="text-body mb-1"><b>Mario Alberto</b> solicita 12 neumaticos.
+                                                </p>
+                                                <span class="text-muted">Hace 2 min</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="../img/user/avatar-1.jpg" alt="user-image" class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">6:00 PM</span>
+                                                <p class="text-body mb-1"><b>Fernando García</b> necesita una
+                                                    aclaración.</p>
+                                                <span class="text-muted">Hace 1 día</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="../img/user/avatar-3.jpg" alt="user-image" class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">2:45 PM</span>
+                                                <p class="text-body mb-1">Estoy por agotarse del <b>taller M45</b></p>
+                                                <span class="text-muted">Hace 5 horas</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="../img/user/avatar-4.jpg" alt="user-image" class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">9:10 PM</span>
+                                                <p class="text-body mb-1">Junta con el <b>Sr. Juan</b></p>
+                                                <span class="text-muted">Inicia a las 8:20 AM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="text-center py-2">
+                                <a href="#!" class="link-primary">Ver todas</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Cambiar el tema -->
+                    <!-- <li class="dropdown pc-h-item">
+                            <a class="pc-head-link me-0" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_pc_layout">
+                                <i class="ti ti-moon-stars"></i>
+                                <i class="ti ti-sun"></i>
+                            </a>
+                        </li> -->
+
+                    <li class="dropdown pc-h-item header-user-profile">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="../img/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+                            <span class="user-name">Mario Pérez</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+
+                            <div class="dropdown-header">
+                                <div class="d-flex mb-1">
+                                    <div class="flex-shrink-0">
+                                        <img src="../img/user/avatar-2.jpg" alt="user-image" class="user-avtar wid-35">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="mb-1">Mario Pérez</h6>
+                                        <span>Surtidor de tienda #234</span>
+                                    </div>
+                                    <a href="#!" class="pc-head-link bg-transparent">
+                                        <i class="ti ti-power text-danger"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="nav drp-tabs nav-fill nav-tabs" id="mydrpTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="drp-t1" data-bs-toggle="tab"
+                                        data-bs-target="#drp-tab-1" type="button" role="tab" aria-controls="drp-tab-1"
+                                        aria-selected="true">
+                                        <i class="ti ti-user"></i> Perfil</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="drp-t2" data-bs-toggle="tab"
+                                        data-bs-target="#drp-tab-2" type="button" role="tab" aria-controls="drp-tab-2"
+                                        aria-selected="false">
+                                        <i class="ti ti-settings"></i> Configuración</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="mysrpTabContent">
+                                <div class="tab-pane fade show active" id="drp-tab-1" role="tabpanel"
+                                    aria-labelledby="drp-t1" tabindex="0">
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-edit-circle"></i>
+                                        <span>Editar perfil</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-user"></i>
+                                        <span>Ver perfil</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-clipboard-list"></i>
+                                        <span>Socios</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-wallet"></i>
+                                        <span>Inventario</span>
+                                    </a>
+                                    <a href="../login.html" class="dropdown-item">
+                                        <i class="ti ti-power"></i>
+                                        <span>Cerrar sesión</span>
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="drp-tab-2" role="tabpanel" aria-labelledby="drp-t2"
+                                    tabindex="0">
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-help"></i>
+                                        <span>Chatear</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-user"></i>
+                                        <span>Ver pedidos</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-lock"></i>
+                                        <span>Terminos y condiciones</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-messages"></i>
+                                        <span>Preguntas frecuentes</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-list"></i>
+                                        <span>Historial de movimientos</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+
+
+
+    <!-- [ Main Content ] start -->
+    <main class="pc-container">
+        <div class="pc-content">
+
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+                <div class="page-block">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                                <li class="breadcrumb-item"><a href="./product.html">Pedidos</a></li>
+                                <li class="breadcrumb-item" aria-current="page">#424252</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="page-header-title">
+                                <h2 class="mb-0">Detalles del pedido</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+
+            <!-- [ Main Content ] start -->
+            <div class="row">
+
+                <!-- [ sample-page ] start -->
+                <div class="col-sm-12">
+
+
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="card table-card">
+                                <div class="card-header">
+                                    <h5>Productos 
+                                        <span class="ms-2 f-14 px-2 badge bg-light-secondary rounded-pill">11</span>
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+
+                                        <table class="table" id="pc-dt-simple">
+
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th class="text-end">Precio</th>
+                                                    <th class="text-center">Cantidad</th>
+                                                    <th class="text-end">Total</th>
+                                                    <th class="text-end"></th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <img src="../upload/products/img13.webp" alt="image" class="bg-light wid-50 rounded">
+                                                            <div class="media-body ms-3">
+                                                                <h5 class="mb-1">Filtro rojo Ford 30344</h5>
+                                                                <p class="text-sm text-muted mb-0">Medida: 34x43</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <span class="text-sm text-danger text-decoration-line-through">Antes: $129.99</span>
+                                                        <h5 class="mb-0">$100.00</h5>
+                                                        <span class="text-sm text-success">Mayoreo N1: - $129.99</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="btn-group btn-group-sm mb-2 border" role="group">
+                                                            <button type="button" id="decrease" onclick="decreaseValue('number')" class="btn btn-link-dark">
+                                                                <i class="ti ti-minus"></i>
+                                                            </button>
+                                                            <input class="wid-50 text-center border-0 m-0 form-control rounded-0 shadow-none" type="text" id="number" value="10">
+                                                            <button type="button" id="increase" onclick="increaseValue('number')" class="btn btn-link-dark">
+                                                                <i class="ti ti-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <h5 class="mb-0">$871.00</h5>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="avtar avtar-s btn-link-danger">
+                                                            <i class="ti ti-trash f-18"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="media align-items-center">
+                                                            <img src="../upload/products/img3.png" alt="image" class="bg-light wid-50 rounded">
+                                                            <div class="media-body ms-3">
+                                                                <h5 class="mb-1">Neumatico Nissan-FDor</h5>
+                                                                <p class="text-sm text-muted mb-0">Medida: 24x43</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <h5 class="mb-0">$100.00</h5>
+                                                        <span class="text-sm text-success">Mayoreo N3: $12749.99</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div class="btn-group btn-group-sm mb-2 border" role="group">
+                                                            <button type="button" id="decrease" onclick="decreaseValue('number')" class="btn btn-link-dark">
+                                                                <i class="ti ti-minus"></i>
+                                                            </button>
+                                                            <input class="wid-50 text-center border-0 m-0 form-control rounded-0 shadow-none" type="text" id="number" value="100">
+                                                            <button type="button" id="increase" onclick="increaseValue('number')" class="btn btn-link-dark">
+                                                                <i class="ti ti-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <h5 class="mb-0">$56060.40</h5>
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="#" class="avtar avtar-s btn-link-danger">
+                                                            <i class="ti ti-trash f-18"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-end">
+                                <a href="./product.html" class="btn btn-link-secondary d-inline-flex align-items-center">
+                                    <i class="ti ti-chevron-left me-2"></i> Regresar al inicio
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4">
+
+                            <div class="card">
+                                <div class="card-body py-2">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0">
+                                            <h5 class="mb-0">Total de la orden</h5>
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            <div class="float-end">
+                                                <h5 class="mb-0">$ 456788.87</h5>
+                                            </div>
+                                            <span class="text-muted">Sub Total</span>
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            <div class="float-end">
+                                                <h5 class="mb-0">- $ 45643.48</h5>
+                                            </div><span class="text-muted">Descuento mayoreo</span>
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            <div class="float-end">
+                                                <h5 class="mb-0">$ 564.54</h5>
+                                            </div><span class="text-muted">Costo de envío</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body py-2">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0">
+                                            <div class="float-end">
+                                                <h5 class="mb-0">$35600.45</h5>
+                                            </div>
+                                            <h5 class="mb-0 d-inline-block">Total</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-secondary">Regresar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- [ sample-page ] end -->
+
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </main>
+
+
+    <div class="modal fade" id="addressModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h4 class="calendar-modal-title f-w-600 text-truncate mb-0">Add Billing Address</h4>
+                    <a href="#" class="avtar avtar-s btn-link-danger" data-bs-dismiss="modal">
+                        <i class="ti ti-x f-20"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-end">
+                        <div class="col-sm-12">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio_address"
+                                            id="radio_address1">
+                                        <label class="form-check-label" for="radio_address1">Home</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio_address"
+                                            id="radio_address2" checked>
+                                        <label class="form-check-label" for="radio_address2">Office</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="form-label">Building No./Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Building No./Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="form-label">Street</label>
+                                <input type="text" class="form-control" placeholder="Enter Street">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label">City</label>
+                                <input type="text" class="form-control" placeholder="Enter City">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label">City</label>
+                                <input type="text" class="form-control" placeholder="Enter City">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label">Country</label>
+                                <input type="text" class="form-control" placeholder="Enter Country">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label">Area Code</label>
+                                <input type="text" class="form-control" placeholder="Enter Area Code">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="form-label">Contact</label>
+                                <input type="text" class="form-control" placeholder="Enter Contact">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div class="me-auto">
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input input-secondary" id="customCheckc2" checked>
+                            <label class="form-check-label" for="customCheckc2">Set as Default</label>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 text-end">
+                        <button type="button" class="btn btn-link-danger" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cardModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h4 class="calendar-modal-title f-w-600 text-truncate mb-0">Add Payment Card</h4>
+                    <a href="#" class="avtar avtar-s btn-link-danger" data-bs-dismiss="modal">
+                        <i class="ti ti-x f-20"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-end">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radio_address"
+                                        id="radio_address111">
+                                    <label class="form-check-label" for="radio_address111">Home</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radio_address"
+                                        id="radio_address21" checked>
+                                    <label class="form-check-label" for="radio_address21">Office</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="form-label">Bank</label>
+                                <input type="text" class="form-control" placeholder="Enter Bank">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="form-label">Card Number</label>
+                                <input type="text" class="form-control" placeholder="Enter Card Number">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label">Expiry Date</label>
+                                <input type="text" class="form-control" placeholder="Enter Expiry Date">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="form-label">CVV</label>
+                                <input type="text" class="form-control" placeholder="Enter CVV">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="radio_address" id="radio_address11">
+                                <label class="form-check-label" for="radio_address11">Credit Card</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="radio_address" id="radio_address12">
+                                <label class="form-check-label" for="radio_address12">debit</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="radio_address" id="radio_address13"
+                                    checked>
+                                <label class="form-check-label" for="radio_address13">Net Banking</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link-danger" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- [ Footer ] start -->
+    <footer class="pc-footer">
+        <div class="footer-wrapper container-fluid">
+            <div class="row">
+                <div class="col-sm my-1">
+                    <p class="m-0">STBN &amp; BASE MASTER  ||
+                        <a href="#" target="_blank">EQUIPO 7</a> |
+                        <a href="#" target="_blank">UAM</a>.</p>
+                </div>
+                <div class="col-auto my-1">
+                    <ul class="list-inline footer-link mb-0">
+                        <li class="list-inline-item"><a href="/admin/dashboard.html">Inicio</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank">Terminos y condiciones</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank">Ayuda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- [ Footer ] end -->
+    
+
+    <!-- Required Js -->
+    <script src="../assets/js/plugins/popper.min.js"></script>
+    <script src="../assets/js/plugins/simplebar.min.js"></script>
+    <script src="../assets/js/plugins/bootstrap.min.js"></script>
+    <script src="../assets/js/fonts/custom-font.js"></script>
+    <script src="../assets/js/pcoded.js"></script>
+    <script src="../assets/js/plugins/feather.min.js"></script>
+
+
+    <!-- [Page Specific JS] start -->
+    <script>
+        // quantity start
+        function increaseValue(temp) {
+            var value = parseInt(document.getElementById(temp).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById(temp).value = value;
+        }
+
+        function decreaseValue(temp) {
+            var value = parseInt(document.getElementById(temp).value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? (value = 1) : '';
+            value--;
+            document.getElementById(temp).value = value;
+        }
+        // quantity end
+    </script>
+    <!-- [Page Specific JS] end -->
+
+</body>
+<!-- [Body] end -->
+
+</html>
